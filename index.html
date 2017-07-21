@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body align='center'>
+    <div class="container">
+        <h1>RESERVAR BUS</h1>
+        <table border=5 cellpadding=10 cellpadding=10 cellspacing="5" align='center' bordercolor='blue'>
+            <tr>
+                <td><button type="button">4</button></td>
+                <td><button type="button">8</button></td>
+                <td><button type="button">12</button></td>
+                <td><button type="button">16</button></td>
+                <td><button type="button">20</button></td>
+                <td><button type="button">24</button></td>
+                <td><button type="button">28</button></td>
+                <td><button type="button">32</button></td>
+            </tr>
+            <tr>
+                <td><button type="button">3</button></td>
+                <td><button type="button">7</button></td>
+                <td><button type="button">11</button></td>
+                <td><button type="button">15</button></td>
+                <td><button type="button">19</button></td>
+                <td><button type="button">23</button></td>
+                <td><button type="button">27</button></td>
+                <td><button type="button">31</button></td>
+            </tr>
+            <tr>
+                <td><button type="button">2</button></td>
+                <td><button type="button">6</button></td>
+                <td><button type="button">10</button></td>
+                <td><button type="button">14</button></td>
+                <td><button type="button">18</button></td>
+                <td><button type="button">22</button></td>
+                <td><button type="button">26</button></td>
+                <td><button type="button">30</button></td>
+            </tr>
+            <tr>
+                <td><button type="button">1</button></td>
+                <td><button type="button">5</button></td>
+                <td><button type="button">9</button></td>
+                <td><button type="button">13</button></td>
+                <td><button type="button">17</button></td>
+                <td><button type="button">21</button></td>
+                <td><button type="button">25</button></td>
+                <td><button type="button">29</button></td>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="mostrar"></div>
+    <div class="container">
+        <p>
+            DNI: <input type="text" name="numdni" id="dni" >
+            <button type="button" onclick="buscar(); return false">Buscar</button>
+        </p>
+    </div>
+    <div class="container" align="center">
+        <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+        <br>
+        <br>
+        <input type="text" placeholder="Apellido" name="apellido" id="apell">
+        <br>
+        <br>
+        <input type="text" placeholder="DNI" name="eldni" id="eldni">
+    </div>
+    <br>
+    <button id="agregar" type="button" name="button">Reservar</button>
+    <button type="button" onclick="consulta();" name="button">ok</button>
+    <button type="button" onclick="cancela(); return false">Cancelar</button>
+    <br>
+    <br>
+    <button id="print" type="button" name="button">Listar</button>
+    <div id="lista"></div>
+    <script src="main.js"></script>
+</body>
+</html>
