@@ -61,6 +61,7 @@ function printHTML (html){
   listando.innerHTML = html;
 }
 
+//Funcion Agregar
 var addPas = document.getElementById('agregar');
 addPas.onclick = function() {
     var asientos = document.getElementById("mostrar").textContent;
