@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
 </head>
-<body align='center'>
+<body align='center' style="background-color:pink;">
     <div class="container">
         <h1>RESERVAR BUS</h1>
         <table border=5 cellpadding=10 cellpadding=10 cellspacing="5" align='center' bordercolor='blue'>
@@ -54,18 +54,18 @@
     <div id="mostrar"></div>
     <div class="container">
         <p>
-            DNI: <input type="text" name="numdni" id="dni" >
+            DNI: <input type="number" name="numdni" id="dni" >
             <button type="button" onclick="buscar(); return false">Buscar</button>
         </p>
     </div>
     <div class="container" align="center">
-        <input type="text" placeholder="Nombre" name="nombre" id="nombre">
+        <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
         <br>
         <br>
-        <input type="text" placeholder="Apellido" name="apellido" id="apell">
+        <input type="text" placeholder="Apellido" name="apellido" id="apell" required>
         <br>
         <br>
-        <input type="text" placeholder="DNI" name="eldni" id="eldni">
+        <input type="number" placeholder="DNI" name="eldni" id="eldni" required>
     </div>
     <br>
     <button id="agregar" type="button" name="button">Reservar</button>
